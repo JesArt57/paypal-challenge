@@ -9,6 +9,7 @@ import {
 } from '@common/infrastructure/constants/app.constants';
 import { winstonLogger } from '@common/infrastructure/logger/winston.logger';
 import { AppModule } from './app.module';
+import { AllExceptionsFilter } from '@common/presenters/exceptions/all-exceptions.filter';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule, {
