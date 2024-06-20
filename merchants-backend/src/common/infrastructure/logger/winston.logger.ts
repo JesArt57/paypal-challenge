@@ -1,7 +1,7 @@
 import { format, createLogger, transports } from 'winston';
 import { v4 as uuid } from 'uuid';
 import * as dayjs from 'dayjs';
-import { APP_BASEPATH } from '@common/infrastructure/constants/app.constants';
+import { API_BASEPATH } from '@common/infrastructure/constants/app.constants';
 
 interface Logback {
   '@date': string;
@@ -21,7 +21,7 @@ const operationsFormatter = format.printf((info) => {
     '@date': dayjs().format('YYYY-MM-DD HH:mm:ss'),
     traceId,
     level: level.toUpperCase(),
-    appName: APP_BASEPATH,
+    appName: API_BASEPATH,
     message,
     context,
   };

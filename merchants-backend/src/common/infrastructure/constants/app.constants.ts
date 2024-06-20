@@ -1,2 +1,2 @@
 export const APP_NAME: string = 'paypal-merchants';
-export const APP_BASEPATH: string = 'paypal/api/v1';
+export const API_BASEPATH: string = 'paypal/api/v1';

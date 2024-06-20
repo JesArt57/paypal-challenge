@@ -1,7 +1,7 @@
 import { MiddlewareConsumer, Module, NestModule, RequestMethod } from '@nestjs/common';
 import { TraceMiddleware } from '@core/infraestructure/middlewares/trace.middleware';
 import { AppController } from '@core/presenters/rest/app.controller';
-import { APP_BASEPATH } from '@common/infrastructure/constants/app.constants';
+import { API_BASEPATH } from '@common/infrastructure/constants/app.constants';
 
 @Module({
   imports: [],
@@ -13,7 +13,7 @@ export class CoreModule implements NestModule {
     consumer
       .apply(TraceMiddleware)
       .exclude({
-        path: `${APP_BASEPATH}/health`,
+        path: `${API_BASEPATH}/health`,
         method: RequestMethod.GET,
       })
       .forRoutes('');
