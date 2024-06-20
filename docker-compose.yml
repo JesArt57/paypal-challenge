@@ -1,0 +1,20 @@
+services:
+  merchants-backend:
+    build:
+      context: ./merchants-backend
+    env_file: .env.global
+    ports:
+      - 4000:4000
+    networks:
+      merchants-app:
+  merchants-frontend:
+    build:
+      context: ./merchants-frontend
+    env_file: .env.global
+    ports:
+      - 5174:5174
+    networks:
+      merchants-app:
+networks:
+  merchants-app:
+    driver: bridge
