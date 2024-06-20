@@ -17,10 +17,11 @@ import { MerchantsService } from '@merchants/application/merchants.service';
 import { Merchant } from '@merchants/domain/entities/merchant';
 import { APISuccessfulResponse } from '@common/infrastructure/interfaces/api-response.interface';
 import { SUCCESSFULL_RESPONSE_MESSAGE } from '@common/infrastructure/constants/api-messages';
+import { ParseMongoIdPipe } from '@common/presenters/pipes/parse-mongo-id.pipe';
+import { PaginatedMerchants } from '@merchants/domain/object-values/paginated-merchants';
 import { PaginationDto } from './dto/pagination.dto';
 import { CreateMerchantDto } from './dto/create-merchant.dto';
 import { UpdateMerchantDto } from './dto/update-merchant.dto';
-import { ParseMongoIdPipe } from '@common/presenters/pipes/parse-mongo-id.pipe';
 
 @Controller('merchants')
 export class MerchantsController {
@@ -29,12 +30,12 @@ export class MerchantsController {
   constructor(
     @Inject(REQUEST) private readonly request: Request,
     private readonly merchantsService: MerchantsService,
-  ) {}
+  ) { }
 
   @Get()
   async findAll(
     @Query() paginationDto: PaginationDto,
-  ): Promise<APISuccessfulResponse<Merchant[]>> {
+  ): Promise<APISuccessfulResponse<PaginatedMerchants>> {
     const traceId: string = this.request.app.locals.config.traceId;
 
     this.logger.log('Request to findAll merchants', { traceId });
@@ -43,8 +44,8 @@ export class MerchantsController {
 
     this.logger.log('Merchants retrieved successfully', { traceId });
 
-    const response: APISuccessfulResponse<Merchant[]> = Builder<
-      APISuccessfulResponse<Merchant[]>
+    const response: APISuccessfulResponse<PaginatedMerchants> = Builder<
+      APISuccessfulResponse<PaginatedMerchants>
     >()
       .traceId(traceId)
       .message(SUCCESSFULL_RESPONSE_MESSAGE)
@@ -167,6 +168,27 @@ export class MerchantsController {
       `Merchant deleted successfully: ${JSON.stringify(response)}`,
       { traceId },
     );
+
+    return response;
+  }
+
+  @Post('seed')
+  async seed() {
+    const traceId: string = this.request.app.locals.config.traceId;
+
+    this.logger.log('Request to seed merchants', { traceId });
+
+    await this.merchantsService.seed();
+
+    this.logger.log('Merchants seeded successfully', { traceId });
+
+    const response: APISuccessfulResponse<string> = Builder<
+      APISuccessfulResponse<string>
+    >()
+      .traceId(traceId)
+      .message(SUCCESSFULL_RESPONSE_MESSAGE)
+      .data('Merchants seeded successfully')
+      .build();
 
     return response;
   }

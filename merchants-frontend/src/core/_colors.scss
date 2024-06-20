@@ -1,0 +1,9 @@
+$paypal-colors: (
+  "paypal-blue": #253b80,
+  "paypal-boyzone-blue": #2997d8,
+  "paypal-polar-blue": #accee3,
+  "paypal-light-blue": #e5eff6,
+  "paypal-text-gray": #545d68
+);
+
+$theme-colors: map-merge($theme-colors, $paypal-colors);

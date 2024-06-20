@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@core/*": [
+        "core/*",
+        "core"
+      ],
+      "@custom_types/*": [
+        "custom_types/*",
+        "custom_types"
+      ],
+      "@hooks/*": [
+        "hooks/*",
+        "hooks"
+      ],
+      "@libs/*": [
+        "lib/*",
+        "lib"
+      ],
+      "@api/*": [
+        "api/*",
+        "api"
+      ],
+      "@ui/*": [
+        "ui/*",
+        "ui"
+      ],
+      "@constants/*": [
+        "constants/*",
+        "constants"
+      ],
+      "@stores/*": [
+        "stores/*",
+        "stores"
+      ]
+    }
+  }
+}

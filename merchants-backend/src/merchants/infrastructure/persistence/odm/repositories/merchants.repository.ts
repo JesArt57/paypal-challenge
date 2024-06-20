@@ -6,21 +6,31 @@ import { MerchantsRepository as MerchantsRepositoryPort } from '@merchants/appli
 import { Merchant } from '@merchants/domain/entities/merchant';
 import { MerchantEntity } from '@merchants/infrastructure/persistence/odm/entities/merchant.entity';
 import { MerchantsMapper } from '@merchants/infrastructure/persistence/odm/mappers/merchants.mapper';
+import { PaginatedMerchants } from '@merchants/domain/object-values/paginated-merchants';
+import { merchantsSeed } from './seed.json'
 
 @Injectable()
 export class MerchantsRepository implements MerchantsRepositoryPort {
   constructor(
     @InjectModel(MerchantEntity.name)
     private readonly merchantEntityModel: Model<MerchantEntity>,
-  ) {}
+  ) { }
 
-  async findAll(pagination: Pagination): Promise<Merchant[]> {
+  async seed(): Promise<void> {
+    await this.merchantEntityModel.create(merchantsSeed);
+  }
+
+  async findAll(pagination: Pagination): Promise<PaginatedMerchants> {
     const merchants = await this.merchantEntityModel
-      .find({})
+      .find()
+      .skip(pagination.offset * pagination.limit)
       .limit(pagination.limit)
-      .skip(pagination.offset);
+      .exec();
 
-    return merchants.map((merchant) => MerchantsMapper.toDomain(merchant));
+
+    const total = await this.merchantEntityModel.countDocuments({}).exec();
+
+    return MerchantsMapper.toDomainPaginated(merchants, total);
   }
 
   async findOneById(id: string): Promise<Merchant> {

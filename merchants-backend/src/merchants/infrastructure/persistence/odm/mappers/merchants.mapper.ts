@@ -1,4 +1,5 @@
 import { Merchant } from '@merchants/domain/entities/merchant';
+import { PaginatedMerchants } from '@merchants/domain/object-values/paginated-merchants';
 import { MerchantEntity } from '@merchants/infrastructure/persistence/odm/entities/merchant.entity';
 import { Builder } from 'builder-pattern';
 
@@ -12,6 +13,16 @@ export class MerchantsMapper {
       .name(merchantEntity.name)
       .sector(merchantEntity.sector)
       .build();
+  }
+
+  static toDomainPaginated(merchantEntities: MerchantEntity[], total: number): PaginatedMerchants {
+    const merchants = merchantEntities.map((merchantEntity) => MerchantsMapper.toDomain(merchantEntity));
+    const paginatedMerchants = Builder<PaginatedMerchants>()
+      .merchants(merchants)
+      .total(total)
+      .build();
+
+    return paginatedMerchants
   }
 
   static toPersistence(merchant: Merchant): MerchantEntity {

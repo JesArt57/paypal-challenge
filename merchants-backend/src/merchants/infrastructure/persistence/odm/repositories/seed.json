@@ -1,0 +1,454 @@
+{
+  "merchantsSeed": [
+    {
+      "name": "Clark and Sons",
+      "email": "contact@clarkandsons.com",
+      "logoUrl": "https://seeklogo.com/images/C/coca-cola-circle-logo-A9EBD3B00A-seeklogo.com.png",
+      "sector": "comida",
+      "address": {
+        "country": "Japan",
+        "state": "Tokyo",
+        "city": "Tokyo",
+        "neighborhood": "Shibuya",
+        "street": "Cat Street",
+        "streetNumber": "123",
+        "zipCode": "150-0001"
+      }
+    },
+    {
+      "name": "Lewis Group",
+      "email": "info@lewisgroup.com",
+      "logoUrl": "https://seeklogo.com/images/F/facebook-logo-508E0A9E15-seeklogo.com.png",
+      "sector": "tecnología",
+      "address": {
+        "country": "Germany",
+        "state": "Berlin",
+        "city": "Berlin",
+        "neighborhood": "Mitte",
+        "street": "Friedrichstraße",
+        "streetNumber": "101",
+        "zipCode": "10117"
+      }
+    },
+    {
+      "name": "Walker Ltd",
+      "email": "contact@walkerltd.com",
+      "logoUrl": "https://seeklogo.com/images/A/apple-logo-E7C1EB3CF9-seeklogo.com.png",
+      "sector": "educación",
+      "address": {
+        "country": "France",
+        "state": "Île-de-France",
+        "city": "Paris",
+        "neighborhood": "Le Marais",
+        "street": "Rue de Rivoli",
+        "streetNumber": "56",
+        "zipCode": "75004"
+      }
+    },
+    {
+      "name": "Allen and Partners",
+      "email": "support@allenandpartners.com",
+      "logoUrl": "https://seeklogo.com/images/T/twitter-logo-9C230CE261-seeklogo.com.png",
+      "sector": "salud",
+      "address": {
+        "country": "Italy",
+        "state": "Lazio",
+        "city": "Rome",
+        "neighborhood": "Trastevere",
+        "street": "Via della Lungara",
+        "streetNumber": "89",
+        "zipCode": "00165"
+      }
+    },
+    {
+      "name": "Young Enterprises",
+      "email": "info@youngenterprises.com",
+      "logoUrl": "https://seeklogo.com/images/G/google-logo-F8BF3155AC-seeklogo.com.png",
+      "sector": "finanzas",
+      "address": {
+        "country": "Spain",
+        "state": "Madrid",
+        "city": "Madrid",
+        "neighborhood": "Salamanca",
+        "street": "Calle Serrano",
+        "streetNumber": "45",
+        "zipCode": "28006"
+      }
+    },
+    {
+      "name": "King PLC",
+      "email": "support@kingplc.com",
+      "logoUrl": "https://seeklogo.com/images/C/coca-cola-circle-logo-A9EBD3B00A-seeklogo.com.png",
+      "sector": "comida",
+      "address": {
+        "country": "South Africa",
+        "state": "Gauteng",
+        "city": "Johannesburg",
+        "neighborhood": "Sandton",
+        "street": "Rivonia Road",
+        "streetNumber": "101",
+        "zipCode": "2196"
+      }
+    },
+    {
+      "name": "Harris and Co.",
+      "email": "contact@harrisandco.com",
+      "logoUrl": "https://seeklogo.com/images/F/facebook-logo-508E0A9E15-seeklogo.com.png",
+      "sector": "tecnología",
+      "address": {
+        "country": "Russia",
+        "state": "Moscow",
+        "city": "Moscow",
+        "neighborhood": "Tverskoy",
+        "street": "Tverskaya Street",
+        "streetNumber": "22",
+        "zipCode": "125009"
+      }
+    },
+    {
+      "name": "Scott Inc",
+      "email": "info@scottinc.com",
+      "logoUrl": "https://seeklogo.com/images/A/apple-logo-E7C1EB3CF9-seeklogo.com.png",
+      "sector": "educación",
+      "address": {
+        "country": "China",
+        "state": "Beijing",
+        "city": "Beijing",
+        "neighborhood": "Chaoyang",
+        "street": "Chaoyangmen",
+        "streetNumber": "56",
+        "zipCode": "100020"
+      }
+    },
+    {
+      "name": "Adams and Sons",
+      "email": "support@adamsandsons.com",
+      "logoUrl": "https://seeklogo.com/images/T/twitter-logo-9C230CE261-seeklogo.com.png",
+      "sector": "salud",
+      "address": {
+        "country": "India",
+        "state": "Maharashtra",
+        "city": "Mumbai",
+        "neighborhood": "Andheri",
+        "street": "Link Road",
+        "streetNumber": "78",
+        "zipCode": "400053"
+      }
+    },
+    {
+      "name": "Evans Group",
+      "email": "contact@evansgroup.com",
+      "logoUrl": "https://seeklogo.com/images/G/google-logo-F8BF3155AC-seeklogo.com.png",
+      "sector": "finanzas",
+      "address": {
+        "country": "Mexico",
+        "state": "Hidalgo",
+        "city": "Tula",
+        "neighborhood": "Atotonilco",
+        "street": "Galeana",
+        "streetNumber": "2",
+        "zipCode": "14060"
+      }
+    },
+    {
+      "name": "Meyer-Silva",
+      "email": "bakerjessica@roberts-salazar.biz",
+      "logoUrl": "https://seeklogo.com/images/C/coca-cola-circle-logo-A9EBD3B00A-seeklogo.com.png",
+      "sector": "comida",
+      "address": {
+        "country": "China",
+        "state": "Maine",
+        "city": "East Annstad",
+        "neighborhood": "Apt. 592",
+        "street": "Kelly Neck",
+        "streetNumber": "61981",
+        "zipCode": "76766"
+      }
+    },
+    {
+      "name": "Davis, Wagner and Craig",
+      "email": "vmiller@jackson.com",
+      "logoUrl": "https://seeklogo.com/images/F/facebook-logo-508E0A9E15-seeklogo.com.png",
+      "sector": "educación",
+      "address": {
+        "country": "Jersey",
+        "state": "Tennessee",
+        "city": "Williestad",
+        "neighborhood": "Apt. 618",
+        "street": "Barbara Lane",
+        "streetNumber": "41519",
+        "zipCode": "56981"
+      }
+    },
+    {
+      "name": "Hall, Graham and Chan",
+      "email": "russelljames@lopez.com",
+      "logoUrl": "https://seeklogo.com/images/F/facebook-logo-508E0A9E15-seeklogo.com.png",
+      "sector": "educación",
+      "address": {
+        "country": "Jersey",
+        "state": "Illinois",
+        "city": "Lake Jamie",
+        "neighborhood": "Apt. 233",
+        "street": "Rachel Ports",
+        "streetNumber": "40518",
+        "zipCode": "58498"
+      }
+    },
+    {
+      "name": "Gregory-Thompson",
+      "email": "jeanette37@park.com",
+      "logoUrl": "https://seeklogo.com/images/C/coca-cola-circle-logo-A9EBD3B00A-seeklogo.com.png",
+      "sector": "comida",
+      "address": {
+        "country": "Bermuda",
+        "state": "Florida",
+        "city": "New Matthew",
+        "neighborhood": "Suite 348",
+        "street": "Ashley Valley",
+        "streetNumber": "60147",
+        "zipCode": "87091"
+      }
+    },
+    {
+      "name": "Torres, Scott and Powell",
+      "email": "xgreen@parsons.com",
+      "logoUrl": "https://seeklogo.com/images/C/coca-cola-circle-logo-A9EBD3B00A-seeklogo.com.png",
+      "sector": "tecnología",
+      "address": {
+        "country": "Hong Kong",
+        "state": "Arizona",
+        "city": "Aliciaport",
+        "neighborhood": "Suite 535",
+        "street": "Rickey Causeway",
+        "streetNumber": "06770",
+        "zipCode": "94120"
+      }
+    },
+    {
+      "name": "Brady-Davis",
+      "email": "emma95@schneider-wright.org",
+      "logoUrl": "https://seeklogo.com/images/A/apple-logo-E7C1EB3CF9-seeklogo.com.png",
+      "sector": "comida",
+      "address": {
+        "country": "Honduras",
+        "state": "Iowa",
+        "city": "West Jennifer",
+        "neighborhood": "Apt. 771",
+        "street": "Samantha Fort",
+        "streetNumber": "5504",
+        "zipCode": "16483"
+      }
+    },
+    {
+      "name": "Smith, Gibbs and Harper",
+      "email": "julie50@snyder-barber.com",
+      "logoUrl": "https://seeklogo.com/images/C/coca-cola-circle-logo-A9EBD3B00A-seeklogo.com.png",
+      "sector": "educación",
+      "address": {
+        "country": "Guyana",
+        "state": "Arkansas",
+        "city": "Amandaview",
+        "neighborhood": "Suite 424",
+        "street": "Erin Forges",
+        "streetNumber": "82048",
+        "zipCode": "15364"
+      }
+    },
+    {
+      "name": "Snyder, Dorsey and Fleming",
+      "email": "leonwright@knox.com",
+      "logoUrl": "https://seeklogo.com/images/A/apple-logo-E7C1EB3CF9-seeklogo.com.png",
+      "sector": "comida",
+      "address": {
+        "country": "Niger",
+        "state": "New Jersey",
+        "city": "West Donnaville",
+        "neighborhood": "Apt. 381",
+        "street": "Kristine Place",
+        "streetNumber": "5035",
+        "zipCode": "60308"
+      }
+    },
+    {
+      "name": "Lee PLC",
+      "email": "jonbennett@hernandez.info",
+      "logoUrl": "https://seeklogo.com/images/A/apple-logo-E7C1EB3CF9-seeklogo.com.png",
+      "sector": "finanzas",
+      "address": {
+        "country": "Albania",
+        "state": "Maryland",
+        "city": "Port Susanstad",
+        "neighborhood": "Apt. 936",
+        "street": "Johnson Harbor",
+        "streetNumber": "764",
+        "zipCode": "83021"
+      }
+    },
+    {
+      "name": "Delgado LLC",
+      "email": "amy52@moreno.com",
+      "logoUrl": "https://seeklogo.com/images/G/google-logo-F8BF3155AC-seeklogo.com.png",
+      "sector": "salud",
+      "address": {
+        "country": "Dominica",
+        "state": "Utah",
+        "city": "New Sean",
+        "neighborhood": "Suite 242",
+        "street": "Williams Square",
+        "streetNumber": "03931",
+        "zipCode": "66436"
+      }
+    },
+    {
+      "name": "Simpson-Hunt",
+      "email": "info@simpsonhunt.com",
+      "logoUrl": "https://seeklogo.com/images/C/coca-cola-circle-logo-A9EBD3B00A-seeklogo.com.png",
+      "sector": "comida",
+      "address": {
+        "country": "Greece",
+        "state": "Central Macedonia",
+        "city": "Thessaloniki",
+        "neighborhood": "Toumba",
+        "street": "Egnatia",
+        "streetNumber": "100",
+        "zipCode": "54622"
+      }
+    },
+    {
+      "name": "Parker and Sons",
+      "email": "support@parkerandsons.com",
+      "logoUrl": "https://seeklogo.com/images/F/facebook-logo-508E0A9E15-seeklogo.com.png",
+      "sector": "tecnología",
+      "address": {
+        "country": "Netherlands",
+        "state": "North Holland",
+        "city": "Amsterdam",
+        "neighborhood": "De Pijp",
+        "street": "Albert Cuypstraat",
+        "streetNumber": "50",
+        "zipCode": "1072 CV"
+      }
+    },
+    {
+      "name": "Roberts PLC",
+      "email": "info@robertsplc.com",
+      "logoUrl": "https://seeklogo.com/images/A/apple-logo-E7C1EB3CF9-seeklogo.com.png",
+      "sector": "educación",
+      "address": {
+        "country": "Ireland",
+        "state": "Dublin",
+        "city": "Dublin",
+        "neighborhood": "Temple Bar",
+        "street": "Dame Street",
+        "streetNumber": "35",
+        "zipCode": "D02 XY34"
+      }
+    },
+    {
+      "name": "Carter Group",
+      "email": "contact@cartergroup.com",
+      "logoUrl": "https://seeklogo.com/images/T/twitter-logo-9C230CE261-seeklogo.com.png",
+      "sector": "salud",
+      "address": {
+        "country": "South Korea",
+        "state": "Seoul",
+        "city": "Seoul",
+        "neighborhood": "Gangnam",
+        "street": "Teheran-ro",
+        "streetNumber": "10",
+        "zipCode": "06134"
+      }
+    },
+    {
+      "name": "Mitchell Inc",
+      "email": "info@mitchellinc.com",
+      "logoUrl": "https://seeklogo.com/images/G/google-logo-F8BF3155AC-seeklogo.com.png",
+      "sector": "finanzas",
+      "address": {
+        "country": "Portugal",
+        "state": "Lisbon",
+        "city": "Lisbon",
+        "neighborhood": "Alfama",
+        "street": "Rua da Madalena",
+        "streetNumber": "25",
+        "zipCode": "1100-319"
+      }
+    },
+    {
+      "name": "Adams and Co",
+      "email": "support@adamsandco.com",
+      "logoUrl": "https://seeklogo.com/images/C/coca-cola-circle-logo-A9EBD3B00A-seeklogo.com.png",
+      "sector": "comida",
+      "address": {
+        "country": "Egypt",
+        "state": "Cairo",
+        "city": "Cairo",
+        "neighborhood": "Zamalek",
+        "street": "26th of July Street",
+        "streetNumber": "18",
+        "zipCode": "11561"
+      }
+    },
+    {
+      "name": "Anderson Group",
+      "email": "info@andersongroup.com",
+      "logoUrl": "https://seeklogo.com/images/F/facebook-logo-508E0A9E15-seeklogo.com.png",
+      "sector": "tecnología",
+      "address": {
+        "country": "Sweden",
+        "state": "Stockholm",
+        "city": "Stockholm",
+        "neighborhood": "Södermalm",
+        "street": "Götgatan",
+        "streetNumber": "40",
+        "zipCode": "11826"
+      }
+    },
+    {
+      "name": "Johnson LLC",
+      "email": "info@johnsonllc.com",
+      "logoUrl": "https://seeklogo.com/images/A/apple-logo-E7C1EB3CF9-seeklogo.com.png",
+      "sector": "educación",
+      "address": {
+        "country": "Norway",
+        "state": "Oslo",
+        "city": "Oslo",
+        "neighborhood": "Grünerløkka",
+        "street": "Thorvald Meyers gate",
+        "streetNumber": "50",
+        "zipCode": "0555"
+      }
+    },
+    {
+      "name": "Brown Ltd",
+      "email": "info@brownltd.com",
+      "logoUrl": "https://seeklogo.com/images/T/twitter-logo-9C230CE261-seeklogo.com.png",
+      "sector": "salud",
+      "address": {
+        "country": "Belgium",
+        "state": "Brussels",
+        "city": "Brussels",
+        "neighborhood": "Ixelles",
+        "street": "Avenue Louise",
+        "streetNumber": "200",
+        "zipCode": "1050"
+      }
+    },
+    {
+      "name": "Wilson and Sons",
+      "email": "info@wilsonandsons.com",
+      "logoUrl": "https://seeklogo.com/images/G/google-logo-F8BF3155AC-seeklogo.com.png",
+      "sector": "finanzas",
+      "address": {
+        "country": "Denmark",
+        "state": "Capital Region",
+        "city": "Copenhagen",
+        "neighborhood": "Vesterbro",
+        "street": "Vesterbrogade",
+        "streetNumber": "100",
+        "zipCode": "1620"
+      }
+    }
+  ]
+}

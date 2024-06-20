@@ -1,0 +1,19 @@
+.sidebar-item {
+  cursor: pointer;
+
+  &:hover {
+    background-color: map-get($theme-colors, "paypal-blue");
+    color: white !important;
+  }
+
+  &.active {
+    background-color: map-get($theme-colors, "paypal-blue");
+    color: white !important;
+  }
+
+
+  .icon {
+    width: 100%;
+    max-width: 24px;
+  }
+}
