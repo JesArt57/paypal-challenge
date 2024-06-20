@@ -4,4 +4,4 @@ import { Module } from '@nestjs/common';
   controllers: [],
   providers: [],
 })
-export class MerchantsModule { }
+export class MerchantsModule {}

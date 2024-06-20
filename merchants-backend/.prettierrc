@@ -1,4 +1,15 @@
 {
+  "bracketSpacing": true,
   "singleQuote": true,
-  "trailingComma": "all"
+  "printWidth": 80,
+  "trailingComma": "all",
+  "overrides": [
+    {
+      "files": "**/*.md",
+      "options": {
+        "parser": "markdown",
+        "proseWrap": "always"
+      }
+    }
+  ]
 }

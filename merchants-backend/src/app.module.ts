@@ -5,6 +5,11 @@ import { CoreModule } from '@core/application/core.module';
 import { MerchantsModule } from '@merchants/application/merchants.module';
 
 @Module({
-  imports: [ConfigModule.forRoot({ isGlobal: true }), CommonModule, CoreModule, MerchantsModule],
+  imports: [
+    ConfigModule.forRoot({ isGlobal: true }),
+    CommonModule,
+    CoreModule,
+    MerchantsModule,
+  ],
 })
-export class AppModule { }
+export class AppModule {}
