@@ -1,10 +1,11 @@
 import { MiddlewareConsumer, Module, NestModule, RequestMethod } from '@nestjs/common';
+import { TerminusModule } from '@nestjs/terminus';
 import { TraceMiddleware } from '@core/infraestructure/middlewares/trace.middleware';
 import { AppController } from '@core/presenters/rest/app.controller';
 import { API_BASEPATH } from '@common/infrastructure/constants/app.constants';
 
 @Module({
-  imports: [],
+  imports: [TerminusModule],
   controllers: [AppController],
   providers: [],
 })
